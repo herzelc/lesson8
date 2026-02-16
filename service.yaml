@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lesson8-service
+spec:
+  type: ClusterIP
+  selector:
+    app: lesson8-app
+  ports:
+    - port: 80
+      targetPort: 80
